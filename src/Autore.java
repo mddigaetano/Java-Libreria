@@ -4,7 +4,7 @@ public class Autore {
     final private String nome;
     private int nLibri;
     private String libri [] = new String [100];
-    final public static String genere = "avventura";
+    final public static String genere = "Romanzo";
     
     public Autore(String id, String nome){
         this.id = id;
@@ -34,9 +34,5 @@ public class Autore {
     
     public void acquista(Libro libro){
         System.out.println("Hai acquistato il libro "+libro.getTitolo()+" al prezzo di "+libro.getPrezzo());
-    }
-    
-    public static String getGenere(){
-        return Autore.genere;
     }
 }
